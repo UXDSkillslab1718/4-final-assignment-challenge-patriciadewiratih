@@ -54,7 +54,7 @@ div{
     max-width: 1040px;
     margin: 0 auto;
     padding: 6em 5em;
-    overflow:hidden;
+    overflow: auto;
 }
 .portfolio .content-wrap{
     padding:0;
@@ -108,10 +108,10 @@ footer p{
 /* Navigation */
 nav{
     text-align: right;
-    line-height: 70px;
-    width: 100%;    
+    line-height: 70px;   
     background: #423E37;
     position: fixed;
+    width:100%;
     top:0;
 } 
 nav img{
@@ -129,6 +129,12 @@ nav a{
     text-transform: uppercase;
     font-weight: 700;
 }
+.nav-wrap{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: auto;
+}
 .menu{
     clear: left;
     margin: 0 30px 0 0;
@@ -140,23 +146,23 @@ nav a{
     margin: 0 10px;
     display:block;
     text-align: right;
-    color:gray;
+    color:#EDEBD7;
     transition:0.5s;
 }
 .menu a:hover{
-    color: #423E37;
-    background: #E3B23C;
+    color: #E3B23C;
 }
 label{
     margin: 0 40px 0 0;
     font-size: 26px;
-    line-height: 70px;
+    line-height: 70px;;
 }
 #toggle{
     display: none;
 }
 #toggle:checked + .menu {
     display: block;
+    clear: left;
 }
 
 /* work experience*/
@@ -261,7 +267,7 @@ img{
     }
 }
     @media(max-width: 899px){
-        header{
+        header,h1,h2,h3{
             text-align: center;
         }
         .profile-img{
