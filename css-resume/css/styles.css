@@ -26,7 +26,7 @@ h1, h3, p {
     margin:0;
     text-align: justify;
 }
-h1, header h2 {
+h1, header {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -34,18 +34,20 @@ h1, header h2 {
 h1{
     font-size: 3em;
 }
-section h2 {
-    text-align: left;
-}
 h2{
     font-size: 2em;
     margin:0;
     padding-bottom: 2rem;
+    text-align: left;
 }
 h3{
     font-weight: 400;
     font-size: 1.5em;
     text-align: left;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 }
 div{
     display: inline-block;
@@ -91,6 +93,7 @@ header{
     position: absolute;
     bottom: 0;
     right: 0;
+    font-weight: 300;
 }
 /* footer */
 footer{
@@ -196,7 +199,7 @@ p + h3 {
 }
 /* contact */
 .contact a{
-    margin: 0 1rem;
+    margin: 1rem;
     padding: 1em;
     text-decoration: none;
     display: inline-flex;
@@ -267,8 +270,17 @@ img{
     }
 }
     @media(max-width: 899px){
-        header,h1,h2,h3{
+        header,h1,h3,p,.emphasis{
             text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        header p {
+            text-align: justify;
+        }
+        .education p{
+            text-align: justify;
         }
         .profile-img{
             width: 300px;
