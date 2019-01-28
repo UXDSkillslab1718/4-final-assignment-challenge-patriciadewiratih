@@ -114,8 +114,14 @@ nav{
     position: fixed;
     top:0;
 } 
-nav div{
-    
+nav img{
+    width: 10rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.logo{
+    text-align: left;
 }
 nav a{
     display: inline-block;
