@@ -12,6 +12,7 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+  
 
 /* Global style */
 body {
@@ -49,6 +50,9 @@ p{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
+.emphasis{
+    font-style: italic;
+}
 div{
     display: inline-block;
 }
@@ -84,6 +88,7 @@ header{
     color: #EDEBD7;
     padding-top: 70px;
     position: relative;
+    text-align: center;
 }
 
 .profile-img{
@@ -131,9 +136,12 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    width: 100%;
+}
+ul{
+    margin-right: 1rem;
 }
 .nav-wrap{
-    max-width: 1040px;
     margin: 0 auto;
     padding: 0;
     overflow: auto;
@@ -244,6 +252,10 @@ p + h3 {
 img{
     width: 400px;
 }
+.post{
+    height:auto;
+    width: 843px;
+}
 .portfolio{
     background: #6E675F;
     text-align: center;
@@ -269,20 +281,20 @@ img{
         padding-left: 2.5em;
     }
 }
-    @media(max-width: 899px){
-        header,h1,h3,p,.emphasis{
-            text-align: center;
-        }
-        h2{
-            text-align: center;
-        }
-        header p {
-            text-align: justify;
-        }
-        .education p{
-            text-align: justify;
-        }
-        .profile-img{
-            width: 300px;
-        }
+@media(max-width: 899px){
+   .content-wrap{
+        position: center;
     }
+    header,h1,h2,h3,p,.emphasis{
+        text-align: center;
+    }
+    .work .emphasis, .work .uppercase, .education .emphasis{
+        text-align: center;
+    }
+    header p, .work p, .education p{
+        text-align: justify;
+    }
+    .profile-img{
+        max-width: 80%;
+    }
+}
